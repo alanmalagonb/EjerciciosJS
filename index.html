@@ -5,41 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script type="text/javascript" src="scripts.js"></script>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    
+    <div class="contenedor">
+        <div class="flex-shrink-0 p-3 bg-white barra" style="width: 280px;">
+            <a href="#" class="d-flex align-items-center pb-3 mb-3 link-dark text-decoration-none border-bottom">
+              <svg class="bi me-2" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+              <span class="fs-5 fw-semibold">JavaScript</span>
+            </a>
+            <ul class="list-unstyled ps-0">
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse" aria-expanded="true">
+                  Condicionales
+                </button>
+                <div class="collapse show" id="home-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="Condicionales/votar.html" class="link-dark rounded">Puedes Votar</a></li>
+                    <li><a href="Condicionales/mayorTres.html" class="link-dark rounded">Mayor de 3 números</a></li>
+                    <li><a href="Condicionales/ejemploSwitch.html" class="link-dark rounded">Ejemplo Switch</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#dashboard-collapse" aria-expanded="true">
+                  Ciclos
+                </button>
+                <div class="collapse show" id="dashboard-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="#" class="link-dark rounded" onclick="paresFor()">Pares 1-100 For</a></li>
+                    <li><a href="#" class="link-dark rounded" onclick="sumatoriaFor()">Sumatoria 100 For</a></li>
+                    <li><a href="#" class="link-dark rounded" onclick="paresWhile()">Pares 1-100 While</a></li>
+                    <li><a href="#" class="link-dark rounded" onclick="sumatoriaWhile()">Sumatoria 100 While</a></li>
+                    <li><a href="#" class="link-dark rounded" onclick="paresDoWhile()">Pares 1-100 Do While</a></li>
+                    <li><a href="#" class="link-dark rounded" onclick="sumatoriaDoWhile()">Sumatoria 100 Do While</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse" aria-expanded="true">
+                  Algoritmos de Ordenación (Arreglos)
+                </button>
+                <div class="collapse show" id="orders-collapse">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="Algoritmos/bubbleSort.html" class="link-dark rounded">Bubble Sort</a></li>
+                    <li><a href="Algoritmos/insertionSort.html" class="link-dark rounded">Insertion Sort</a></li>
+                    <li><a href="Algoritmos/selectionSort.html" class="link-dark rounded">Selection Sort</a></li>
+                  </ul>
+                </div>
+              </li>
+              <li class="mb-1">
+                <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#orders-collapse2" aria-expanded="true">
+                  Operaciones Base
+                </button>
+                <div class="collapse show" id="orders-collapse2">
+                  <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+                    <li><a href="Operaciones/e1.html" class="link-dark rounded">Pares - Impares</a></li>
+                    <li><a href="Operaciones/e2.html" class="link-dark rounded">Tablas de Multiplicar</a></li>
+                    <li><a href="Operaciones/e3.html" class="link-dark rounded">Producto con sumas</a></li>
+                    <li><a href="Operaciones/e4.html" class="link-dark rounded">Número Mayor en Arreglo</a></li>
+                    <li><a href="Operaciones/e5.html" class="link-dark rounded">Suma de Arreglos</a></li>
+                    <li><a href="Operaciones/e6.html" class="link-dark rounded">Media Aritmética</a></li>
+                    <li><a href="Operaciones/e7.html" class="link-dark rounded">Operaciones con Textos</a></li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="alado">
+            <div class="carta">
+                <h3>Elige un ejercicio.</h3>
+            </div>
+          </div>
+    </div>
+    <script src="Ciclos/scripts.js"></script>
 </body>
-    <table border="1">
-        <tr>
-            <th>Menú</th>
-            <th>Ejercicio</th>
-        </tr>
-        <tr>
-            <td><a href="ejercicio1.html">Par o Impar</a></td>
-            <td rowspan="10">Seleccione un ejercicio</td>
-        </tr>
-        <tr>
-            <td><a href="ejercicio1.html">Tabla de multiplicar</a></td>
-        </tr>
-        <tr>
-            <td><a href="ejercicio1.html">Producto por sumas</a></td>
-        </tr>
-        <tr>
-            <td><a href="ejercicio1.html">Mayor</a></td>
-        </tr>
-        <tr>
-            <td><a href="ejercicio1.html">Suma Vectores</a></td>
-        </tr>
-        <tr>
-            <td><a href="ejercicio1.html">Media</a></td>
-        </tr>
-        <tr>
-            <td><a href="ejercicio1.html">Ordenar</a></td>
-        </tr>
-        <tr>
-            <td><a href="ejercicio1.html">Textos</a></td>
-        </tr>
-    </table>
 </html>
