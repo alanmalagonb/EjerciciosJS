@@ -45,4 +45,13 @@ li {
     padding: 15px;
     background-color: white;
     border-radius: 5px;
+    box-shadow: 5px 5px lightgrey; 
+    align-items: center;
+    align-content: center;
+}
+
+button {
+    background-color: #92e0ed;
+    border-color: #92e0ed;
+    border-radius: 4px;
 }
