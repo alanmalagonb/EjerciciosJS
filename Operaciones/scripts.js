@@ -23,9 +23,16 @@ function ejercicio2(){
     }  
 }
 
+var num1 = [0];
+var num2 = [0];
+
 function ejercicio3(){
     var numero = document.getElementById("1").value;
     var numero2 = document.getElementById("2").value;
+    var producto = 0;
+    for (let i = 0; i < numero2; i++) {
+        producto += numero;
+    }
     alert('Producto: ' + numero * numero2);
 }
 
